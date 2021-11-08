@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="background-color: aquamarine;">
+    <form class="signup-form" action="/register" method="post">
+
+      <div class="form-header">
+        <h1 style="color: red;">Register</h1>
+      </div>
+
+      <div class="form-body">
+
+          <div class="form-group">
+            <label for="firstname" class="label-title">Name : </label>
+            <input type="text" name="name" id="firstname" class="form-input" placeholder=" first name" required="required" />
+          </div>
+          <div class="form-group ">
+            <label for="emp_id" class="label-title">Employee ID :</label>
+            <input type="text" name="emp_id" id="emp_id" class="form-input" placeholder=" employee id" required/>
+          </div>
+      
+
+        <div class="form-group">
+          <label for="email" class="label-title">Email :</label>
+          <input type="email" id="email" name="email" class="form-input" placeholder=" email" required="required">
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="label-title">Age :</label>
+          <input type="number" id="age" name="age" class="form-input" placeholder="age" required="required">
+        </div>
+
+     
+          <div class="form-group left"style="margin-top:15px" >
+            <label for="phone" class="label-title">Phone number :</label>
+            <input type="number" name="ph_no" id="phone" placeholder="phone number" size="10" class="form-input" required>
+          </div>
+
+
+       
+          <div class="form-group">
+            <label class="label-title">Gender :</label>
+            <div class="input-group">
+              <label for="male"><input type="radio" name="gender" value="male" id="male"> Male</label>
+              <label for="female"><input type="radio" name="gender" value="female" id="female"> Female</label>
+              <label for="others"><input type="radio" name="gender" value="others" id="others"> Others</label>
+            </div>
+          </div>
+
+          
+          <div class="form-group ">
+            
+            <label class="label-title">Branch :</label>
+            <select name="branch" class="form-input" id="level" >
+              <option value="chennai">Chennai</option>
+              <option value="delhi">Delhi</option>
+              <option value="mumbai">Kolkata</option>
+              <option value="mumbai">Mumbai</option>
+            </select>
+         
+      </div>
+   
+
+ 
+          <div class="form-group ">
+            <label for="password" class="label-title">Password :</label>
+            <input type="password" name="password" id="password" class="form-input" placeholder=" password" required="required">
+          </div>
+
+          <div class="form-group ">
+            <label for="organization" class="label-title">Organization Name :</label>
+            <input type="text" name="Org_name" class="form-input" id="organization" placeholder="password " required="required">
+          </div>
+     
+
+      
+          <div class="form-group ">
+            <label for="experience" class="label-title">Years of experience :</label>
+            <input type="number" name="experiance" id="experience" class="form-input" required>
+          </div>
+       
+
+        <div class="form-group ">
+          <label for="experience" class="label-title">Salary :</label>
+          <input type="number" name="salary" id="salary" class="form-input" placeholder="salary" required>
+        </div>
+      </div>
+
+      <div class="form-footer">
+       
+        <button type="submit" class="btn bg-primary">Create</button>
+      </div>
+
+     
+
+    </form>
+
+    <script>
+      var rangeLabel = document.getElementById("range-label");
+      var experience = document.getElementById("experience");
+
+      function change() {
+      rangeLabel.innerText = experience.value + "K";
+      }
+    </script>
+
+  </body>
+</html>
